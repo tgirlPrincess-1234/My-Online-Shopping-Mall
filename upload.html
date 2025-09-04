@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload - Royal Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">Royal Supermarket</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="checkout.html">Checkout (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="upload-section">
+            <h2>Add New Product</h2>
+            <form id="upload-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="number" id="product-price" placeholder="Price (₦)" required>
+                <input type="file" id="product-image" accept="image/*" required>
+                <button type="submit">Upload Product</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
